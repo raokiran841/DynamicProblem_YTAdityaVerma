@@ -9,6 +9,10 @@
    e. target sum
    f. number of subset with given difference
 2. Unbounded knapsack
+   a. Rod cutting
+   b. coin change I
+   c. coin change II
+   d. Maximum Ribbon cut
 3. fibonacci
 4. LCS
 5. LIS
