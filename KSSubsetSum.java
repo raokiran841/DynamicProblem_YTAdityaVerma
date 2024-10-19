@@ -19,10 +19,10 @@ public class KSSubsetSum {
 
         for(int i=0; i<arr.length+1; i++){
             for(int j=0; j<t+1; j++){
-                if(j==0){
+                if(i==0){
                     dp[i][j] = false;
                 }
-                if(i==0){
+                if(j==0){
                     dp[i][j] = true;
                 }
             }
