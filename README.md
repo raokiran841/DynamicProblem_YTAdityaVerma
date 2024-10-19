@@ -1,11 +1,13 @@
 # DynamicProblem_YTAdityaVerma
 
 **Parent problems**
-1. 0-1 knapsack
+1. 0-1 knapsack (maximise profit from a given weight and value list with a fixed maximum weight Capasity.)
    a. subset sum
    b. equal sum partition
    c. count of subset sum
    d. minimal subset difference
+   e. target sum
+   f. number of subset with given difference
 2. Unbounded knapsack
 3. fibonacci
 4. LCS
