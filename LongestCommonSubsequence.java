@@ -58,6 +58,6 @@ class LongestCommonSubSequence{
             }
         }
 
-        return dp[n][m];
+        return t[n][m];
     }
 }
