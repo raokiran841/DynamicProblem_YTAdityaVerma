@@ -27,12 +27,19 @@
    - count how many times a appears as subsequence in b
    - largest palindromic subsequence
    - largest palindromic substring
-   - count of palindromic sunstring
+   - count of palindromic substring
    - min no of deletion in a string to make it a palindrom
-   - min no of insertions in a string to make it a palindrom
+   - min no of insertions in a string to make it a palindrom (Exactly same as prev one)
 5. LIS
 6. Kadane's Algorithm
 7. Matrix chain multiplication
+   - MCM
+   - print MCM
+   - Evaluate expression to true / boolean paranthesization
+   - min / max value of an expression
+   - Palindrom partitioning
+   - Scramble string
+   - Egg dropping problem
 8. DP on trees
 9. DP on grids
 10. Others
