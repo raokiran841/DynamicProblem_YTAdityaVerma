@@ -1,3 +1,4 @@
+package MatrixChainMultiplication;
 public class MCMPalindromPartition {
     private static Integer[][] dp;
     public static void main(String[] args) {

@@ -41,5 +41,9 @@
    - Scramble string
    - Egg dropping problem
 8. DP on trees
+   - Diameter of binary tree
+   - Maximum path sum from any node to any
+   - Maximum path sum from leaf to leaf
+   - Diameter of N-ary tree
 9. DP on grids
 10. Others

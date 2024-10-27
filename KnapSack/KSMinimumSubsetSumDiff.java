@@ -1,3 +1,4 @@
+package KnapSack;
 public class KSMinimumSubsetSumDiff {
     public static void main(String[] args) {
         KSMinimumSubsetSumDiff mssd = new KSMinimumSubsetSumDiff();

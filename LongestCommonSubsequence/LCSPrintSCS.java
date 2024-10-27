@@ -1,3 +1,4 @@
+package LongestCommonSubsequence;
 public class LCSPrintSCS {
     public static void main(String[] args) {
         LCSPrintSCS obj = new LCSPrintSCS();

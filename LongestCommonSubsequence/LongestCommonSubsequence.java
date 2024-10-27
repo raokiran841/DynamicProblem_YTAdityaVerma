@@ -1,3 +1,4 @@
+package LongestCommonSubsequence;
 class LongestCommonSubSequence{
     private static Integer[][] dp;
     public static void main(String[] args) {

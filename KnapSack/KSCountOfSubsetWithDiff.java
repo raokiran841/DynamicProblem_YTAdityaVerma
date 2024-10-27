@@ -1,8 +1,23 @@
-public class KSCountOfSubsetSum {
+package KnapSack;
+public class KSCountOfSubsetWithDiff {
     public static void main(String[] args) {
-        KSCountOfSubsetSum coss = new KSCountOfSubsetSum();
-        int count = coss.countOfSumsetSum(new int[]{2,5,8,3,10}, 10);
-        System.out.println("total numner of subsets with sum: "+10+" are: "+count);
+        KSCountOfSubsetWithDiff coswd = new KSCountOfSubsetWithDiff();
+        int[] arr = new int[]{1,1,2,3};
+        int diff = 1;
+        int count = coswd.countOfSubsetsWithGivenDiff(arr, diff);
+        System.out.println("count of subsets with diff "+diff+" are:"+count);
+    }
+
+    private int countOfSubsetsWithGivenDiff(int[] arr, int diff){
+        // s1 - s2 = diff & s1 + s2 = sumOfArrayElements(range);
+        int range = 0;
+        for(int val : arr){
+            range += val;
+        }
+
+        int s1 = (range+diff)/2;
+
+        return countOfSumsetSum(arr, s1);
     }
 
     private int countOfSumsetSum(int[] arr, int sum){

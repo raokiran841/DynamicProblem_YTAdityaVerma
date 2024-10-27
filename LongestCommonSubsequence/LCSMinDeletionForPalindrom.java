@@ -1,26 +1,20 @@
-public class LCSMinOnOfInsertionDeletion {
+package LongestCommonSubsequence;
+public class LCSMinDeletionForPalindrom {
     public static void main(String[] args) {
-        LCSMinOnOfInsertionDeletion minInsertDelete = new LCSMinOnOfInsertionDeletion();
-        String x = "heap";
-        String y = "pea";
+        LCSMinDeletionForPalindrom minDeleteForPalindrom = new LCSMinDeletionForPalindrom();
+
+        String x = "agbcba";
 
         /**
-         * Problem statement : convert string x to y with minimum number of insertions and deletion
-         * operations.
+         * Problem statement : minimum no if delete operations in given string x to make it a palindrom
          * 
-         * heap -> pea
-         * 
-         * Solution : lcs of both is "ea" which is not changing.
-         * 
-         * So we convert x -> lcs by deleting then lcs -> y by inserting
-         * 
-         * heap -> ea (2 delete ops h and p) -> pea (1 insert op of p)
-         * 
+         * Example : agbcba -> abcba (1 deletion of g)
         */
 
-        int lcs = minInsertDelete.lcs_length_topDown(x, y, x.length(), y.length());
+        String y = new StringBuilder(x).reverse().toString();
 
-        System.out.println("deletions: " + (x.length() - lcs) + " and insertions "+ (y.length() - lcs));
+        int count = x.length() - minDeleteForPalindrom.lcs_length_topDown(x, y, x.length(), y.length());
+        System.out.println("minimum no if delete operations in given string x to make it a palindrom "+count);
     }
 
     private int lcs_length_topDown(String x, String y, int n, int m){

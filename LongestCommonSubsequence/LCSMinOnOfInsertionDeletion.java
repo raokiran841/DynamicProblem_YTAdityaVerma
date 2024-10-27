@@ -1,10 +1,27 @@
-public class LCSLongestPalindromicSubsequence {
+package LongestCommonSubsequence;
+public class LCSMinOnOfInsertionDeletion {
     public static void main(String[] args) {
-        LCSLongestPalindromicSubsequence lps = new LCSLongestPalindromicSubsequence();
-        String x = "agbcba";
-        String y = new StringBuffer(x).reverse().toString();
-        int length = lps.lcs_length_topDown(x, y, x.length(), y.length());
-        System.out.println("Length of longest palindromic subsequence is "+length);
+        LCSMinOnOfInsertionDeletion minInsertDelete = new LCSMinOnOfInsertionDeletion();
+        String x = "heap";
+        String y = "pea";
+
+        /**
+         * Problem statement : convert string x to y with minimum number of insertions and deletion
+         * operations.
+         * 
+         * heap -> pea
+         * 
+         * Solution : lcs of both is "ea" which is not changing.
+         * 
+         * So we convert x -> lcs by deleting then lcs -> y by inserting
+         * 
+         * heap -> ea (2 delete ops h and p) -> pea (1 insert op of p)
+         * 
+        */
+
+        int lcs = minInsertDelete.lcs_length_topDown(x, y, x.length(), y.length());
+
+        System.out.println("deletions: " + (x.length() - lcs) + " and insertions "+ (y.length() - lcs));
     }
 
     private int lcs_length_topDown(String x, String y, int n, int m){

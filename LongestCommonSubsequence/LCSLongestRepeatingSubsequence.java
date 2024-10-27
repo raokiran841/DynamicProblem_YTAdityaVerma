@@ -1,3 +1,4 @@
+package LongestCommonSubsequence;
 public class LCSLongestRepeatingSubsequence {
     public static void main(String[] args) {
         LCSLongestRepeatingSubsequence obj = new LCSLongestRepeatingSubsequence();

@@ -1,3 +1,4 @@
+package KnapSack;
 public class KSEqualSumPartition {
     public static void main(String[] args) {
         KSEqualSumPartition esp = new KSEqualSumPartition();

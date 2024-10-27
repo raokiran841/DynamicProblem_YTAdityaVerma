@@ -1,3 +1,4 @@
+package KnapSack;
 public class KSSubsetSum {
     public static void main(String[] args) {
         KSSubsetSum ss = new KSSubsetSum();

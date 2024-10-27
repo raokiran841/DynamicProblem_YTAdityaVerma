@@ -1,3 +1,4 @@
+package MatrixChainMultiplication;
 public class MCM {
 
     private static Integer[][] dp;

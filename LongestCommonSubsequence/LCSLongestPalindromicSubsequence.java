@@ -1,19 +1,11 @@
-public class LCSMinDeletionForPalindrom {
+package LongestCommonSubsequence;
+public class LCSLongestPalindromicSubsequence {
     public static void main(String[] args) {
-        LCSMinDeletionForPalindrom minDeleteForPalindrom = new LCSMinDeletionForPalindrom();
-
+        LCSLongestPalindromicSubsequence lps = new LCSLongestPalindromicSubsequence();
         String x = "agbcba";
-
-        /**
-         * Problem statement : minimum no if delete operations in given string x to make it a palindrom
-         * 
-         * Example : agbcba -> abcba (1 deletion of g)
-        */
-
-        String y = new StringBuilder(x).reverse().toString();
-
-        int count = x.length() - minDeleteForPalindrom.lcs_length_topDown(x, y, x.length(), y.length());
-        System.out.println("minimum no if delete operations in given string x to make it a palindrom "+count);
+        String y = new StringBuffer(x).reverse().toString();
+        int length = lps.lcs_length_topDown(x, y, x.length(), y.length());
+        System.out.println("Length of longest palindromic subsequence is "+length);
     }
 
     private int lcs_length_topDown(String x, String y, int n, int m){

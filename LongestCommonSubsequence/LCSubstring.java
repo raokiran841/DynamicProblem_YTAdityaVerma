@@ -1,3 +1,4 @@
+package LongestCommonSubsequence;
 public class LCSubstring {
     public static void main(String[] args) {
         LCSubstring lcSubstring = new LCSubstring();

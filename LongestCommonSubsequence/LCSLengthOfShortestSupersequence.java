@@ -1,3 +1,4 @@
+package LongestCommonSubsequence;
 public class LCSLengthOfShortestSupersequence {
     public static void main(String[] args) {
         LCSLengthOfShortestSupersequence loss = new LCSLengthOfShortestSupersequence();

@@ -1,3 +1,4 @@
+package KnapSack;
 public class Knapsack {
 
     private static Integer[][] dp;
